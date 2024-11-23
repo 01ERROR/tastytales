@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Restaurant Menu</h1>
+
+    <!-- Category Navigation -->
+    <div class="category-nav">
+        <button onclick="filterCategory('all')">All</button>
+        <button onclick="filterCategory('indian')">Indian</button>
+        <button onclick="filterCategory('chinese')">Chinese</button>
+        <button onclick="filterCategory('starter')">Starters</button>
+        <button onclick="filterCategory('beverages')">Beverages</button>
+        <button onclick="filterCategory('mexican')">Mexican</button>
+        <button onclick="filterCategory('desserts')">Desserts</button>
+        <button onclick="filterCategory('salads')">Salads</button>
+        <button onclick="filterCategory('french')">French</button>
+    </div>
+
+    <!-- Menu Container -->
+    <div class="menu-container" id="menu-container">
+        <!-- Menu items will be dynamically injected here based on the selected category -->
+    </div>
+
+    <button id="checkoutButton">Proceed to Checkout</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
